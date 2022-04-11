@@ -19,10 +19,6 @@ public class TestKyivstar {
         driver = new ChromeDriver();
     }
 
-//    @AfterTest
-//    public void afterTest() {
-//        driver.quit();
-//    }
 
     public void openFullscreanWindow() {
         driver.manage().window().maximize();
@@ -105,7 +101,7 @@ public class TestKyivstar {
         driver.findElements(By.xpath("//span[@class='btn__content']")).get(3).click();
         driver.findElement(By.xpath("//input [@class='input input--m']")).sendKeys("Martin");
 
-        //   driver.quit();
+        driver.quit();
 
     }
 

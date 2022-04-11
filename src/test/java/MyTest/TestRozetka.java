@@ -19,9 +19,9 @@ public class TestRozetka {
     }
 
     @AfterTest
-//    public void afterTest() {
-//        driver.quit();
-//    }
+    public void afterTest() {
+        driver.quit();
+    }
 
     public void openFullscreanWindow() {
         driver.manage().window().maximize();

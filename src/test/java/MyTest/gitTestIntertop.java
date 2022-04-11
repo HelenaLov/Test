@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestIntertop {
+public class gitTestIntertop {
     WebDriver driver;
 
     @BeforeTest
@@ -19,9 +19,9 @@ public class TestIntertop {
     }
 
     @AfterTest
-//    public void afterTest() {
-//        driver.quit();
-//    }
+   public void afterTest() {
+       driver.quit();
+   }
 
     public void openFullscreanWindow() {
         driver.manage().window().maximize();

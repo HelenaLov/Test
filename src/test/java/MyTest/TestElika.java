@@ -39,5 +39,6 @@ public class TestElika {
         driver.get("https://elika-delivery.com/");
         openFullscreanWindow();
         driver.findElement(By.xpath("//a[@href='/recipes/']")).click();
+
     }
 }
