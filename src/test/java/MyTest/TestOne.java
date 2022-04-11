@@ -48,18 +48,6 @@ public class TestOne {
         driver.quit();
     }
 
-    @Test
-    public void testElika() {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://elika-delivery.com/");
-        driver.manage().window().maximize();
-        driver.findElement(By.xpath("//a[@href='/recipes/']")).click();
-        driver.findElement(By.xpath("//a[@href='https://elika-delivery.com/dostavka-oplata/']")).click();
-        driver.findElement(By.xpath("//div[@class='col-item-text']")).click();
-        driver.findElement(By.xpath("//a[@href='https://www.elika-delivery.com/kontakty']")).click();
-        Assert.assertTrue(driver.getCurrentUrl().contains("kontakty"));
-
-    }
+    
 }
 
