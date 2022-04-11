@@ -24,7 +24,7 @@ public class TestArray {
     }
 
     @Test
-    public void intEqualsIntVsIntegerEqualsInteger() {
+    public void intEqualsIntInteger() {
         Assert.assertEquals(4, 4);
         Assert.assertTrue(4 == 4);
 
@@ -37,4 +37,6 @@ public class TestArray {
 
     private void extracted(boolean b) {
     }
+
+
 }
