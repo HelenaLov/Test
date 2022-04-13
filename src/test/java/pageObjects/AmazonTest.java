@@ -11,4 +11,5 @@ public class AmazonTest extends TestInitPO {
         openURL("https://www.amazon.com/");
         Assert.assertTrue(amazonHomePage.getLogoImage().isDisplayed());
     }
+
 }
