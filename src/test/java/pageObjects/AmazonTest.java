@@ -12,4 +12,10 @@ public class AmazonTest extends TestInitPO {
         Assert.assertTrue(amazonHomePage.getLogoImage().isDisplayed());
     }
 
+    @Test
+    public void checkCard() {
+        AmazonHomePage amazonHomePage = new AmazonHomePage(driver);
+        openURL("https://www.amazon.com/");
+        Assert.assertTrue(amazonHomePage.getCartAmazon().isDisplayed());
+    }
 }

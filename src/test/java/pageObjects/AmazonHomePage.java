@@ -13,4 +13,7 @@ public class AmazonHomePage extends BasePage{
         return driver.findElement(By.xpath("//a[@id='nav-logo-sprites']"));
     }
 
+    public WebElement getCartAmazon() {
+        return driver.findElement(By.xpath("//div[@id='nav-cart-text-container']"));
+    }
 }
