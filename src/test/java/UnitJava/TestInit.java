@@ -49,6 +49,11 @@ public class TestInit {
         WebDriverWait wait = new WebDriverWait(driver, BASIC_TIME);
         return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
+
+    public void goToGoogle(){
+        driver.get("https://www.google.com.ua/");
+    }
+
 }
 
 
