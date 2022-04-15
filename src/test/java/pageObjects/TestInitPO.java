@@ -14,7 +14,6 @@ public class TestInitPO {
     public void beforeMyTest() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-
     }
 
     @AfterMethod
